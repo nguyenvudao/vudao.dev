@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Improve your browser performance with debounce practice'
-date: 2022-07-17
+date: 2022-07-16
 categories: Nodejs, Reactjs
 ---
 
