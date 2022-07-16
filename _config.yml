@@ -1,18 +1,16 @@
-title: Vu Dao - Backend Developer
+title: Vu Dao - Software Engineer
 author: Vu Dao
-email: vudn.97@gmail.com
+email: xxx@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  A simple personal blog about technical, life.
-  Nodejs, JavaScript
+  A simple personal blog about technical and life.
 show_excerpts: true # set to true to show excerpts on the homepage
-
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
 plainwhite:
   name: Vu Dao
-  tagline: NodeJS Developer
+  tagline: Software Engineer
   date_format: '%b %-d, %Y'
   sitemap: true # set to true to generate sitemap.xml content
   dark_mode: true # set true to add dark mode toggle
