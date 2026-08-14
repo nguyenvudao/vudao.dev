@@ -1,0 +1,33 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+footer {
+  height: auto;
+  padding: 1.75rem 0;
+
+  .footer-disclaimer {
+    max-width: 46rem;
+    margin: 0 auto 0.5rem;
+  }
+
+  .footer-links {
+    margin-bottom: 0.35rem;
+  }
+
+  .footer-sep {
+    margin: 0 0.2rem;
+  }
+}

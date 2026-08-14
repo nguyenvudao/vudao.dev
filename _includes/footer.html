@@ -1,0 +1,25 @@
+<!-- The Footer -->
+
+<footer aria-label="Site Info" class="d-flex flex-column justify-content-center text-muted">
+  <p class="footer-disclaimer">
+    The postings on this site are my own and don't necessarily represent my employer's positions,
+    strategies or opinions.
+  </p>
+
+  <p class="footer-links">
+    <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+    <span class="footer-sep" aria-hidden="true">·</span>
+    {%- assign email = site.social.email | split: '@' -%}
+    <a href="javascript:void(location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))">
+      Contact
+    </a>
+    <span class="footer-sep" aria-hidden="true">·</span>
+    <a href="{{ '/editorial/' | relative_url }}">Editorial Policy</a>
+  </p>
+
+  <p>
+    {{- '©' }} {{ site.social.name }}, 2020-<time>{{ 'now' | date: '%Y' }}</time>. Crafted with
+    <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>. Hosted by
+    <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a> with ❤️
+  </p>
+</footer>
