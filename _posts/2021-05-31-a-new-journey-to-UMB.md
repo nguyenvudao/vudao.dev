@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'A new journey to UMB.'
 date: 2021-05-31
-categories: Life
+categories: [Life]
+tags: [career]
+redirect_from:
+  - /life/2021/05/31/a-new-journey-to-UMB.html
 ---
 
 ## It’s been a while...

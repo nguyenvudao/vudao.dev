@@ -1,164 +1,31 @@
-# plainwhite
+# vudao.dev
 
-Simplistic jekyll portfolio-style theme for writers.
+Source of my personal blog, [vudao.dev](https://vudao.dev).
 
-**Demo**: [thelehhman.com](https://thelehhman.com)
+Built with [Jekyll](https://jekyllrb.com/) and the
+[Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, deployed to GitHub Pages by the
+`Build and Deploy` GitHub Actions workflow on every push to `master`.
 
-![plainwhite theme preview](/screenshot.png)
+## Local development
 
-## Installation on Github Pages
+Requires Ruby 3.1+.
 
-Add this line to your site's `_config.yml`:
+```bash
+bundle install
+bundle exec jekyll serve   # http://127.0.0.1:4000
+```
+
+## Writing
+
+Add a file to `_posts/` named `YYYY-MM-DD-title.md` with the front matter:
 
 ```yaml
-remote_theme: thelehhman/plainwhite-jekyll
+---
+title: Post title
+date: 2026-01-01
+categories: [Development, JavaScript]
+tags: [javascript, nodejs]
+---
 ```
 
-## Installation
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "plainwhite"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: plainwhite
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install plainwhite
-
-## Usage
-
-The "plainwhite" key in \_config.yml is used to customize the theme data.
-
-```yaml
-plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-
-  social_links:
-    twitter: thelehhman
-    github: thelehhman
-    linkedIn: in/thelehhman # format: locale/username
-```
-
-**Updating Placeholder Image**
-
-The placeholder portfolio image can be replaced by the desired image by placing it as `assets/portfolio.png` in your jekyll website.
-
-**Comments (Disqus)**
-
-Comments on posts can be enabled by specifying your disqus_shortname under plainwhite in `_config.yml`. For example,
-
-```yaml
-plainwhite:
-  disqus_shortname: games
-```
-
-**Google Analytics**
-
-It can be enabled by specifying your analytics id under plainwhite in `_config.yml`
-
-```yaml
-plainwhite:
-  analytics_id: "< YOUR ID >"
-```
-
-**Sitemap**
-
-It can be toggled by the following line to under plainwhite in `_config.yml`
-
-```yaml
-plainwhite:
-  sitemap: true
-```
-
-**Excerpts**
-
-Excerpts can be enabled by adding the following line to your `_config.yml`
-
-```yaml
-show_excerpts: true
-```
-
-**Layouts**
-
-- Home
-- Page
-- Post
-
-**Navigation**
-
-Navigation can be enabled by adding the following line to your `_config.yml`
-
-```yaml
-plainwhite:
-  navigation:
-    - title: My Work
-      url: "/my-work"
-    - title: Resume
-      url: "/resume"
-```
-
-**Dark mode**
-
-Dark mode can be enabled by setting the `dark_mode` flag in your `_config.yml`
-
-The website will check the OS preferred color scheme and set the theme accordingly, the preference will then be saved in a cookie
-
-```yaml
-plainwhite:
-  dark_mode: true
-```
-
-![plainwhite dark theme previe](/dark.png)
-
-**Multiline tagline**
-
-Tagline can be multiline in this way
-
-```yaml
-plainwhite:
-  tagline: |
-  First Line. 
-
-  Second Line. 
-
-  Third Line.
-```
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/thelehhman/plainwhite-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `plainwhite.gemspec` accordingly.
-
-## Donation
-If this project help you reduce time to develop, you can give me a cup of coffee :) 
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/thelehhman)
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## More themes
-
-- [Texture](https://github.com/thelehhman/texture)
+Images go in `assets/img/` and are referenced as `/assets/img/name.png`.

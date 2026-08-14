@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Tại sao lại có chiếc blog này?'
 date: 2020-05-15
-categories: Life
+categories: [Life]
+tags: [blogging]
+redirect_from:
+  - /life/2020/05/15/tai-sao-lai-co-chiec-blog-nay.html
 ---
 
 Chào các bạn, mình là Đào Nguyên Vũ, tác giả của blog này.

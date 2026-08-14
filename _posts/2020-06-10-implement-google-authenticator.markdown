@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Tích hợp Google Authenticator vào trang web.'
 date: 2020-06-11
-categories: Nodejs JavaScript
+categories: [Development, Node.js]
+tags: [nodejs, javascript, security, 2fa]
+redirect_from:
+  - /nodejs/javascript/2020/06/11/implement-google-authenticator.html
 ---
 
 Chào mọi người, tuần trước Client có gửi cho mình một cái requirement yêu cầu tích hợp Google Authenticator để xác minh hai bước (Two-Factor Authentication) vào trang quản trị `Admin` của họ. Client của mình là một công ty hoạt động trong lĩnh vực finance nên yêu cầu bảo mật cũng phải tốt một chút. Sau một tuần ăn nằm với nó thì mình cùng với team cũng implement xong vụ này nên tiện share lên cho mọi người cùng đọc vì trong quá trình research mình cũng thấy resource nói về việc 2FA integration cũng mù mờ và khá là hạn chế. Chính vì thế mà hôm nay mình sẽ hướng dẫn các bạn cùng integrate cái chức năng này vào trang web héng.
@@ -18,7 +20,7 @@ Theo [Authy][authy-link] thì Two-Factor Authentication là một lớp bảo m�
 - Something you have: Thường thường thì nó là những gì mà user đang sở hữu, như là CMND hoặc hardware token (cái này ở VN thấy mỗi ngân hàng dùng).
 - Something you are: Vân tay, vống mắt,... cái này thì quen quá rồi. Nếu chưa biết thì mình có mò được cái gif trên [Tenor][tentor-link] nè :v
     <!-- ![Jack-Authentication](/assets/img/jackjack-authentication.gif) -->
-  <center><img src="/assets/img/jackjack-authentication.gif"></center>
+  <center><img src="/assets/img/jackjack-authentication.gif" alt="Jack-Jack from The Incredibles, biometric authentication joke"></center>
 
 Okay, có rất nhiều cách để có thể xác thực hai bước, nhưng trong bài này mình sẽ hướng dẫn các bạn xác thực với Google Authenticator. Để sử dụng được phương thức xác thực này, mình sẽ cần một cái smart phone và ứng dụng Google Authenticator có thể tải về trên [IOS][ios-link] và [ANDROID][android-link].
 
@@ -31,7 +33,7 @@ Mấy cái cách xác thực kia mình không bàn, ở đây mình sẽ nói ph
 - Khi mà user bật tính năng 2FA, thì mình sẽ tạo một cái secret key, dựa trên secret key mà sinh ra một cái QRCode để user quét bằng ứng dụng Google Authenticator.
 - User's smart phone sau đó sẽ generate ra một cái OTP code và sẽ thay đổi mỗi 30 giây một lần. Code này sẽ dùng để xác thực khi user đăng nhập.
   <!-- <center>![GG-Auth](/assets/img/ggAuth-dashboard.png)</center> -->
-   <center><img src="/assets/img/ggAuth-dashboard.png"></center>
+   <center><img src="/assets/img/ggAuth-dashboard.png" alt="Google Authenticator app showing a rotating OTP code"></center>
 
 Đấy là góc nhìn của enduser, nghe đơn giản lắm đúng không? Nhưng còn cái business khi integrate ở phía backend thì như thế nào??
 

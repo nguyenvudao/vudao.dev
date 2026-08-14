@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Cộng trừ trong Javascript. What the heck?'
 date: 2020-05-23
-categories: Nodejs JavaScript
+categories: [Development, JavaScript]
+tags: [javascript, nodejs]
+redirect_from:
+  - /nodejs/javascript/2020/05/23/cong-tru-trong-javascript-what-the-heck.html
 ---
 
 Haiiia chào cả nhà iu của kem. Tuần này mình sẽ bắt đầu public posts về technical nhé.

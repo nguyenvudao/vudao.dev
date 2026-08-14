@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Improve your browser performance with debounce practice'
 date: 2022-07-16
-categories: Nodejs, Reactjs
+categories: [Development, JavaScript]
+tags: [javascript, react, nodejs, performance]
+redirect_from:
+  - /nodejs,/reactjs/2022/07/16/improve-browser-performance-with-debounce.html
 ---
 
 Guten Taggg, long time no see you guys haha. I was too busy to blog more, but today I'm gonna show you how to improve your browser performance with a practice called `debounce`.
@@ -11,7 +13,7 @@ Have you ever tackled the challenge that getting all user's inputs and sending t
 
 This led to another problem, if I (as a user) enter a quite long character, then my frontend application will make a ton of API calls. This is a huge problem that gets my server hit soooooo many times (as in the gif below).
 
-<center><img src="/assets/img/without-debounce.gif"></center>
+<center><img src="/assets/img/without-debounce.gif" alt="Many API calls fired without debounce"></center>
 
 ## Reducing the frequency of API calls.
 
@@ -113,7 +115,7 @@ Let's add a small helper function to `await` while user's typing. For example, l
 
 After implementing the debounce to my API calls, there's only one request is made to the server, this helps to reduce a lot of pressure on the server!!!
 
-<center><img src="/assets/img/with-debounce.gif"></center>
+<center><img src="/assets/img/with-debounce.gif" alt="A single API call after adding debounce"></center>
 
 ## How does the debounce work?
 

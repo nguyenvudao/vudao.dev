@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Firebase đã giúp mình bắn notification và quản lý việc nhắn tin của các users với nhau như thế nào? (P.1)'
 date: 2020-09-26
-categories: Nodejs Firebase Typescript
+categories: [Development, Node.js]
+tags: [nodejs, firebase, typescript]
+redirect_from:
+  - /nodejs/firebase/typescript/2020/09/26/firebase-implementation.html
 ---
 
 Hế lô mọi người, lâu quá không gặp ^^!. Nếu không nhầm thì cũng đã khoảng 3 tháng 16 ngày tính từ lần cuối mình publish bài viết về [Google Authenticator] ý. Vấn đề là sau hôm viết bài đấy thì mình join vào một project khác mà theo lời PM (Project Manager) thì project đang trong giai đoạn gấp rút cực kỳ và có thể bị cháy nếu như tình hình hiện tại không được cải thiện :D. Thế là mình lặn ngụp trong đấy mấy tháng trời, vừa làm vừa phải research thêm rất nhiều công nghệ khác (Firebase, Stripe, Nestjs, Odoo, Docker....) nên thời gian rảnh không có nhiều, bù lại thì mình sẽ viết thêm blog để giới thiệu với mọi người từng công nghệ mà mình đã tích hợp. Hiện tại thì project mình nhắc tới ở trên hôm nay đã là sprint cuối cùng lúc mình viết bài blog này (25-09-2020) và tuần sau sẽ bắt đầu bước vào "one month guarantee phase" nên thời gian hiện tại cũng xem như hơi hơi rảnh =)))
@@ -11,7 +13,7 @@ Có một tin không biết là vui hay buồn vì mình mới lại tham gia v�
 
 Thôi lan man vậy thoai, trong bài này mình sẽ nói về [Firebase] - một platform khá ngon lành được backed bởi ông khổng lồ Google.
 
-   <center><img src="/assets/img/one-man-army.jpg"></center>
+   <center><img src="/assets/img/one-man-army.jpg" alt="One man army meme"></center>
    Đây là mình trong dự án hiện tại :D
    
 ### I. Firebase là gì?
@@ -139,7 +141,7 @@ const payload = {
 };
 ```
 
-<center><img src="/assets/img/firebase-notification-example.png"></center>
+<center><img src="/assets/img/firebase-notification-example.png" alt="Firebase push notification on a phone"></center>
 
 ### IV. Kết thúc.
 

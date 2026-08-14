@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Promise all vs Promise allSettled: Xử lý performance trong JavaScript.'
 date: 2020-06-04
-categories: Nodejs JavaScript
+categories: [Development, JavaScript]
+tags: [javascript, nodejs, performance]
+redirect_from:
+  - /nodejs/javascript/2020/06/04/promise-all-vs-promise-allSettled.html
 ---
 
 Hế lô mọi người, chào mừng mọi người quay trở lại với blog cá nhân của mình. Tình hình là mình mới chuyển nhà sang bên Nơ Trang Long, Bình Thạnh (cách công ty tầm 2km mà sáng mở mắt ra là kẹt xe, tối từ công ty về cũng kẹt xe =.= mệt vcđ) nên thời gian có nhiều hơn đôi chút nên tính publish nhiều bài viết hơn nhưng mà dạo này toàn đánh liên minh với tụi cùng phòng thôi =)))) nên đây sẽ là bài đầu tiên trong số đó :D

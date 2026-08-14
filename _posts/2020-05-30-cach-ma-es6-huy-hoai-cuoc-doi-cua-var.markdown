@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Cách mà ES6 hủy hoại cuộc đời của "var"'
 date: 2020-05-30
-categories: Nodejs JavaScript
+categories: [Development, JavaScript]
+tags: [javascript, es6, nodejs]
+redirect_from:
+  - /nodejs/javascript/2020/05/30/cach-ma-es6-huy-hoai-cuoc-doi-cua-var.html
 ---
 
 Chào mọi người, lại là mình đây. Hôm nay viết blog sớm vì laptop cá nhân của mình đang bị em gái trưng dụng nên đành tranh thủ ít phút trên công ty để viết blog :D. Ok, chúng ta sẽ bàn về những cái mới của ES6 và cách mà nó tiêu diệt **var** lạnh lùng như cách mà crush bơ mình vậy :)

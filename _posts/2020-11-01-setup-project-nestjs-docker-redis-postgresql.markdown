@@ -1,8 +1,10 @@
 ---
-layout: post
 title: 'Setup project với nestjs, redis, postgresql và docker.'
 date: 2020-11-01
-categories: Nodejs Docker Nestjs Redis Postgresql
+categories: [Development, Node.js]
+tags: [nestjs, docker, redis, postgresql, nodejs]
+redirect_from:
+  - /nodejs/docker/nestjs/redis/postgresql/2020/11/01/setup-project-nestjs-docker-redis-postgresql.html
 ---
 
 Hề lô hề lô, lại là mình đây ^^!. Hôm thứ 6 lỡ shutdown máy ở trên công ty nên về nhà không [ssh] vào để code tiếp được :D. Tình hình là cái [one man army project] mình nhắc tới ở bài trước đã running được khoảng tầm hơn một tháng rồi. Mà do chỉ có một mình mình làm mà thời gian lại có hơi gấp nên những lúc sau giờ làm mình thường hay mở source code ra để gõ tiếp vài dòng :D. Thứ 7 chủ nhật này xui xui sao tắt máy ở công ty nên xem như nghỉ ngơi vậy :D Tiện thể viết luôn bài blog trong lúc rảnh.
